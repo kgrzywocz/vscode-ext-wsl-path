@@ -1,0 +1,38 @@
+{
+	"name": "wsl-path",
+	"displayName": "Linux/Unix/WSL paths for Windows",
+	"description": "provide copy paths and variables with slashes instead of backslashes",
+	"version": "0.1.0",
+	"engines": {
+		"vscode": "^1.32.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"onCommand:wsl-path.getRelativePath"
+	],
+	"main": "./out/extension.js",
+	"contributes": {
+		"commands": [
+			{
+				"command": "wsl-path.getRelativePath",
+				"title": "Linux/Unix/WSL paths for Windows: Get Relative Path"
+			}
+		]
+	},
+	"scripts": {
+		"vscode:prepublish": "npm run compile",
+		"compile": "tsc -p ./",
+		"watch": "tsc -watch -p ./",
+		"postinstall": "node ./node_modules/vscode/bin/install",
+		"test": "npm run compile && node ./node_modules/vscode/bin/test"
+	},
+	"devDependencies": {
+		"typescript": "^3.3.1",
+		"vscode": "^1.1.28",
+		"tslint": "^5.12.1",
+		"@types/node": "^10.12.21",
+		"@types/mocha": "^2.2.42"
+	}
+}
