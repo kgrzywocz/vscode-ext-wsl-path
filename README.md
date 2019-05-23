@@ -14,7 +14,7 @@ Example `tasks.json` file:
         {
             "label": "Compile current file",
             "type": "shell",
-            "command": "gcc ${command:wsl-path.getRelativePath}
+            "command": "gcc ${command:wsl-path.getRelativePath}"
         }
     ]
 }
