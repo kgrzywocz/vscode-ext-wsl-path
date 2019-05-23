@@ -1,14 +1,35 @@
 {
 	"name": "wsl-path",
-	"displayName": "Linux/Unix/WSL paths for Windows",
-	"description": "provide copy paths and variables with slashes instead of backslashes",
+	"displayName": "Linux/Unix/WSL paths",
+	"description": "Provides commands to have unix-like paths (with slashes instead of backslashes) in vscode scripts (like tasks.json).",
 	"version": "0.1.0",
+	"publisher": "kgrzywocz",
+	"author": {
+		"email": "kgrzywocz@wp.pl",
+		"name": "Krzysztof Grzywocz"
+	},
 	"engines": {
 		"vscode": "^1.32.0"
 	},
 	"categories": [
 		"Other"
 	],
+	"keywords": [
+		"WSL",
+		"linux path",
+		"unix path",
+		"wsl path"
+	],
+	"icon": "images/wsl-path-logo.png",
+	"homepage": "https://github.com/kgrzywocz/vscode-ext-wsl-path",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/kgrzywocz/vscode-ext-wsl-path"
+	},
+	"bugs": {
+		"url": "https://github.com/kgrzywocz/vscode-ext-wsl-path/issues",
+		"email": "kgrzywocz@wp.pl"
+	},
 	"activationEvents": [
 		"onCommand:wsl-path.getRelativePath"
 	],
