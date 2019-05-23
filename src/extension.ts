@@ -1,4 +1,5 @@
 import * as vscode from 'vscode';
+import * as taskCommands from './taskCommands';
 
 function getActiveDocumentUri(): vscode.Uri | undefined {
 
@@ -26,14 +27,8 @@ function registerTaskCommand(context: vscode.ExtensionContext, commandFunction: 
 	);
 }
 
-function getRelativePath(uri: vscode.Uri): string {
-	var path = vscode.workspace.asRelativePath(uri);
-	path = path.replace(/\\/g, '/');
-	return path;
-}
-
 export function activate(context: vscode.ExtensionContext) {
-	registerTaskCommand(context, getRelativePath);
+	registerTaskCommand(context, taskCommands.getRelativePath);
 }
 
 export function deactivate() { }
