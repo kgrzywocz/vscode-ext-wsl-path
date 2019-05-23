@@ -1,12 +1,12 @@
-# wsl-path README
+# wsl-path
 
- Linux/Unix/WSL paths for Windows: provide copy paths and variables with slashes instead of backslashes
+Provides commands to have unix-like paths (with slashes instead of backslashes) in vscode scripts (like `tasks.json`).
 
-## Features
+## Commands to provide paths (e.g.: `tasks.json`)
 
-### Commands to provide paths in for example `tasks.json`
+`${command:wsl-path.getRelativePath}` return unix-like path to currently open file relative to workspace (like: src/filename.cc).
 
-`${command:wsl-path.getRelativePath}` Provides unix-like path to currently open file relative to workspace. Example `tasks.json` file:
+Example `tasks.json` file:
 ```
 {
     "version": "2.0.0",
@@ -19,8 +19,3 @@
     ]
 }
 ```
-## Release Notes
-
-### 1.0.0
-
-Initial release
