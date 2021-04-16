@@ -1,3 +1,6 @@
+> ***NOTE***
+> MS provided new way of using WSL with vscode. This project is archived.
+
 # wsl-path
 
 Provides commands to have unix-like paths (with slashes instead of backslashes) in vscode scripts (like `tasks.json`).
